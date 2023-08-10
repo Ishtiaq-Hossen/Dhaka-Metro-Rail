@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.User8_Goal1Controller">
+   <children>
+      <Label layoutX="165.0" layoutY="5.0" text="Dhaka Metro Power Supply Management" textFill="#0f78a1">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="16.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="4.0" layoutY="53.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="252.0" text="Stationwise power distribution checkup" textFill="#3013e8">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Uttara North St." />
+          <MenuItem mnemonicParsing="false" text="Uttara Center St." />
+            <MenuItem mnemonicParsing="false" text="Uttara South St." />
+            <MenuItem mnemonicParsing="false" text="Pallabi St." />
+            <MenuItem mnemonicParsing="false" text="Mirpur 11 St." />
+            <MenuItem mnemonicParsing="false" text="Mirpur 10 St." />
+            <MenuItem mnemonicParsing="false" text="Kazipara St." />
+            <MenuItem mnemonicParsing="false" text="Shewrapara St." />
+            <MenuItem mnemonicParsing="false" text="Agargaon St." />
+            <MenuItem mnemonicParsing="false" text="Depot " />
+        </items>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </MenuButton>
+      <ListView layoutX="259.0" layoutY="44.0" prefHeight="139.0" prefWidth="337.0" />
+      <Label layoutX="259.0" layoutY="44.0" text="Stationwise and Trainwise power distribution report:" />
+      <MenuButton layoutX="4.0" layoutY="125.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="252.0" text="Metro train power distribution checkup" textFill="#1810eb">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Train 1" />
+            <MenuItem mnemonicParsing="false" text="Train 2" />
+            <MenuItem mnemonicParsing="false" text="Train 3" />
+            <MenuItem mnemonicParsing="false" text="Train 4" />
+            <MenuItem mnemonicParsing="false" text="Train 5" />
+            <MenuItem mnemonicParsing="false" text="Train 6" />
+            <MenuItem mnemonicParsing="false" text="Train 7" />
+            <MenuItem mnemonicParsing="false" text="Train 8" />
+         </items>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </MenuButton>
+      <RadioButton layoutX="189.0" layoutY="183.0" mnemonicParsing="false" text="Backup power On/ Off" textFill="#1bc358">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="189.0" layoutY="216.0" mnemonicParsing="false" text="Backup power AUTO MODE" textFill="#1bc358">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="4.0" layoutY="268.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="252.0" text="Check unusual power cuts" />
+      <ListView layoutX="259.0" layoutY="237.0" prefHeight="87.0" prefWidth="337.0" />
+      <Label layoutX="259.0" layoutY="237.0" text="Unusual power cut reports" />
+      <Button defaultButton="true" layoutX="283.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#logOutOnClick" text="Back" />
+   </children>
+</AnchorPane>

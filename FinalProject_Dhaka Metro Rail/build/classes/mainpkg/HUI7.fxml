@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="600.0" style="-fx-border-color: blue; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.HUI7Controller">
+   <children>
+      <ComboBox fx:id="departmentNameComboBox" layoutX="73.0" layoutY="59.0" prefHeight="55.0" prefWidth="220.0" promptText="Department" />
+      <TableView fx:id="StrategyTableView" layoutX="310.0" layoutY="59.0" prefHeight="220.0" prefWidth="242.0">
+        <columns>
+          <TableColumn fx:id="noColumn" prefWidth="75.0" text="No" />
+          <TableColumn fx:id="planTableColumn" prefWidth="166.0" text="Plan" />
+        </columns>
+      </TableView>
+      <TextField fx:id="newPlanTextField" layoutX="73.0" layoutY="138.0" prefHeight="55.0" prefWidth="220.0" promptText="Enter new plan &amp; strategy" />
+      <Button layoutX="73.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#addNewPlanButtonOnClick" prefHeight="73.0" prefWidth="220.0" style="-fx-background-color: #36c87c;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="71.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#loadTableButtonOnClick" opacity="0.89" prefHeight="66.0" prefWidth="479.0" style="-fx-background-color: #7691cf;" text="Load Table" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

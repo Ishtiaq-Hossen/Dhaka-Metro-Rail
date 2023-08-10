@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="1302.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.StationMasterController">
+   <children>
+      <Label layoutX="105.0" layoutY="164.0" text="Name:" />
+      <Label layoutX="104.0" layoutY="248.0" text="Id:" />
+      <TextField layoutX="105.0" layoutY="198.0" promptText="Enter Your " />
+      <TextField layoutX="104.0" layoutY="286.0" promptText="Enter Your ID" />
+      <Button layoutX="11.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#checkTimeShedualsButtonOnClick" prefHeight="31.0" prefWidth="187.0" text="Check time sheduals" />
+      <Button layoutX="208.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#signalButtonOnClick" text="Signal" />
+      <Button layoutX="283.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#ContactHealthCareCenterButtonOnClick" text="Contact  health care center" />
+      <Button layoutX="487.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#handleUnexpectedSituationsButtonOnClick" text="Handle unexpected situations" />
+      <Button layoutX="842.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#employeeButtonOnClick" text="Employee" />
+      <Button layoutX="711.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#parcelRecevingButtonOnClick" text="Parcel receiving" />
+      <Button layoutX="933.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#checkAllReportsButtonOnClick" text="Check all reports" />
+      <Button layoutX="1071.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#announcementsToPassengerButtonOnClick" prefHeight="31.0" prefWidth="225.0" text="announcements to passengers" />
+      <Label layoutX="40.0" layoutY="94.0" />
+      <Label layoutX="69.0" layoutY="115.0" />
+      <Label layoutX="11.0" layoutY="87.0" text="Station Master Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="1004.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#logOutOnCliCk" prefHeight="70.0" prefWidth="85.0" text="Log out" />
+   </children>
+</AnchorPane>

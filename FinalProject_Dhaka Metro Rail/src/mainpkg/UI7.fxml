@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="685.0" style="-fx-border-color: blue; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.UI7Controller">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3c8ea0;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#e8e8e8" layoutX="19.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Verification">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Label fx:id="showReport" layoutX="11.0" layoutY="82.0" prefHeight="110.0" prefWidth="178.0" style="-fx-background-color: white;" text="show report" />
+            <Button layoutX="11.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#verifyButtonOnClick" prefHeight="56.0" prefWidth="178.0" text="Verify" />
+            <Button layoutX="11.0" layoutY="294.0" mnemonicParsing="false" onMouseClicked="#recheckButtonOnClick" prefHeight="56.0" prefWidth="178.0" text="Recheck" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b6c5c9;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="80.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Entry">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="dataTypeComboBox" layoutX="54.0" layoutY="83.0" prefHeight="45.0" prefWidth="174.0" promptText="What type of data" />
+            <TextField fx:id="dataEntryTextField" layoutX="54.0" layoutY="160.0" prefHeight="49.0" prefWidth="177.0" />
+            <Button layoutX="54.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#saveDataEntryButtonOnClick" prefHeight="53.0" prefWidth="176.0" style="-fx-background-color: #99c48d;" text="Save Data Entry" />
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="457.0" prefWidth="224.0" style="-fx-background-color: #3c8ea0;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#e8e8e8" layoutX="59.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search data">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="searchDataType" layoutX="20.0" layoutY="81.0" prefHeight="45.0" prefWidth="186.0" promptText="What type of data" />
+            <TextField fx:id="searchDataTextField" layoutX="20.0" layoutY="158.0" prefHeight="49.0" prefWidth="186.0" />
+            <Button layoutX="23.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#searchDataOnClick" prefHeight="53.0" prefWidth="180.0" style="-fx-background-color: #de6922;" text="Enter" />
+            <Label fx:id="searchDataFound" layoutX="25.0" layoutY="303.0" prefHeight="53.0" prefWidth="178.0" style="-fx-background-color: white;" text="Data Found" />
+         </children>
+      </AnchorPane>
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="79.0" prefWidth="685.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="253.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#SaveALLData" prefHeight="53.0" prefWidth="176.0" style="-fx-background-color: #87ec6b;" text="Save All Data" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

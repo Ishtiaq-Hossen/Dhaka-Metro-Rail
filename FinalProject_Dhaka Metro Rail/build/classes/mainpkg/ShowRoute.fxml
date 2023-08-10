@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ShowRouteController">
+   <children>
+      <Button layoutX="142.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#searchPeferredTrainButtonOnClicl" prefHeight="31.0" prefWidth="273.0" text="Search your preferred Train" />
+      <TextField fx:id="fromStationField" layoutX="133.0" layoutY="147.0" promptText="From Statiion" />
+      <TextField fx:id="toStationField" layoutX="133.0" layoutY="246.0" promptText="To Station" />
+      <Label layoutX="133.0" layoutY="116.0" text="From" />
+      <Label layoutX="133.0" layoutY="220.0" text="To" />
+      <ComboBox fx:id="selectComboBox" layoutX="546.0" layoutY="147.0" prefWidth="150.0" promptText="Select Train" />
+      <Label layoutX="546.0" layoutY="116.0" text="Select Train" />
+      <Button layoutX="552.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#backTohomeButtonOnClick" prefHeight="31.0" prefWidth="150.0" text="Back" />
+   </children>
+</AnchorPane>

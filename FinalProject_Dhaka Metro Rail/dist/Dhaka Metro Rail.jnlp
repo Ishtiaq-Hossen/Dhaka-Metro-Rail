@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Dhaka Metro Rail.jnlp">
+  <information>
+    <title>Dhaka Metro Rail</title>
+    <vendor>Ishti</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Dhaka Metro Rail" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mainpkg.MainApplication"  name="Dhaka Metro Rail" />
+  <update check="always"/>
+</jnlp>

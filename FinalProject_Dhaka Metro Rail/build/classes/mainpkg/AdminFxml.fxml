@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AdminFxmlController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="626.0" prefWidth="179.0" spacing="5.0" style="-fx-border-color: red; -fx-background-color: #34495e;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ui1Button" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#passenger" prefHeight="50.0" prefWidth="150.0" text="Passenger">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#trainSelection" prefHeight="50.0" prefWidth="150.0" text=" Train Selection">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#staffInfo" prefHeight="50.0" prefWidth="150.0" text="Staff Information">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#routeSelection" prefHeight="50.0" prefWidth="150.0" text="Route Selection">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#training" prefHeight="50.0" prefWidth="150.0" text="Traning">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#direction" prefHeight="50.0" prefWidth="150.0" text="Direction">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#maintainingDatabase" prefHeight="55.0" prefWidth="150.0" text="Maintaining Data">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#cardManagement" prefHeight="55.0" prefWidth="150.0" text="Card Managing">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="50.0" prefWidth="150.0" text="Log out">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </VBox>
+   </left>
+   <top>
+      <AnchorPane prefHeight="89.0" prefWidth="980.0" style="-fx-background-color: #a7bed9;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="396.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrator">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

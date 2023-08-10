@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="651.0" style="-fx-border-color: blue; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.UI5Controller">
+   <children>
+      <Label fx:id="statusLabel" layoutX="66.0" layoutY="14.0" onMouseEntered="#labelMouseEnterOnClick" prefHeight="35.0" prefWidth="126.0" textFill="#f50808">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" layoutX="66.0" layoutY="54.0" prefHeight="312.0" prefWidth="521.0" style="-fx-border-color: blue;" title="Progress chart of service department" />
+      <Button layoutX="332.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#setTraining" prefHeight="90.0" prefWidth="255.0" style="-fx-background-color: green;" text="Set Training" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TextArea fx:id="inquiryTextArea" editable="false" layoutX="66.0" layoutY="394.0" prefHeight="90.0" prefWidth="521.0" text="Taking Inquiry." />
+      <Button layoutX="66.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#sendMailButton" prefHeight="90.0" prefWidth="255.0" style="-fx-background-color: #a1b5cc;" text="Send Mail" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

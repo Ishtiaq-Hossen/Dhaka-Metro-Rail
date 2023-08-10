@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="1137.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.PassengerController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#routeDetailsButtonOnClick" text="View Route Details" />
+      <Button layoutX="161.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#ticketPurchaseOnClick" text="Ticket Purchase" />
+      <Button layoutX="381.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#liveTrainTrackingButtonOnClick" text="Live Tracking" />
+      <Button layoutX="291.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#rechargeCardButtonOnClick" text="Recharge" />
+      <Button layoutX="493.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#ticketVerifyButtonOnClick" text="Ticket Verify" />
+      <Button layoutX="599.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#foreigerServicesButtonOnClick" text="MRT services for Foreigner" />
+      <Button layoutX="795.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#mRCardCheckButtonOnClick" text="Check MRT Card" />
+      <Button layoutX="933.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#complaintAndQuerirsButtonOnClick" prefHeight="31.0" prefWidth="174.0" text="Complaint and queries" />
+      <Label layoutX="66.0" layoutY="134.0" text="From" />
+      <Label layoutX="524.0" layoutY="134.0" text="To" />
+      <TextField fx:id="fromStationTextField" layoutX="66.0" layoutY="167.0" promptText="From Statiion" />
+      <TextField fx:id="toStationTextField" layoutX="524.0" layoutY="159.0" promptText="To Station" />
+      <DatePicker fx:id="dateOfJourney" layoutX="66.0" layoutY="272.0" promptText="Pick a date" />
+      <ComboBox fx:id="chooseComboBox" layoutX="524.0" layoutY="272.0" prefWidth="150.0" promptText="Choose a train" />
+      <Label layoutX="66.0" layoutY="236.0" text="Date Of Journey" />
+      <Label layoutX="524.0" layoutY="236.0" text="Choose Train" />
+      <Button layoutX="270.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#preferredTrainButtonOnClicl" prefHeight="31.0" prefWidth="273.0" text="Search " />
+      <Label layoutX="25.0" layoutY="78.0" text="Passenger Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="1020.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#logOutOnClick" prefHeight="59.0" prefWidth="82.0" text="Log Out" />
+   </children>
+</AnchorPane>

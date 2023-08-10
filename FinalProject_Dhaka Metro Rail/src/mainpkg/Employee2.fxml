@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.Employee2Controller">
+   <children>
+      <Label layoutX="70.0" layoutY="59.0" prefHeight="35.0" prefWidth="448.0" text="Show selected employee:" />
+      <TextArea fx:id="employeeTextArea" layoutX="76.0" layoutY="102.0" prefHeight="92.0" prefWidth="448.0" />
+      <TextField fx:id="locationTextField" layoutX="76.0" layoutY="268.0" promptText="Enter location" />
+      <Label layoutX="76.0" layoutY="239.0" text="Give location:" />
+      <Button layoutX="76.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#submitButtonOnClick" prefHeight="31.0" prefWidth="138.0" text="Submit" />
+      <Button layoutX="358.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#returnHomeButtonOnClick" text="Return to home" />
+   </children>
+</AnchorPane>

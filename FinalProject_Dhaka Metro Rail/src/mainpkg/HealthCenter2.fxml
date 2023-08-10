@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.HealthCenter2Controller">
+   <children>
+      <Label layoutX="74.0" layoutY="87.0" text="Write a message to know health related information:" />
+      <TextArea fx:id="textAreaTextField" layoutX="65.0" layoutY="136.0" prefHeight="129.0" prefWidth="442.0" promptText="Enter a text" />
+      <Button layoutX="101.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#submitButtonOnClick" prefHeight="31.0" prefWidth="111.0" text="Submit" />
+      <Button layoutX="413.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#backButtonOnClick" text="Back to home" />
+   </children>
+</AnchorPane>

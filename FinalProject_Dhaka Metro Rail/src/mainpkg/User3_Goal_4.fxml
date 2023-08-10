@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.User3_Goal_4Controller">
+   <children>
+      <Button layoutX="12.0" layoutY="361.0" mnemonicParsing="false" text="Back" textFill="#ce0a0a" />
+      <Button layoutX="510.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#logOutOnClick" text="Log Out" textFill="#d90b0b" />
+      <Label layoutX="58.0" layoutY="40.0" text="Is user paid extra amount or not?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="190.0" layoutY="77.0" mnemonicParsing="false" text="Yes" textFill="#0fa6ba">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="255.0" layoutY="78.0" mnemonicParsing="false" text="No" textFill="#0c8ec9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="230.0" layoutY="124.0" mnemonicParsing="false" text="Money Back" textFill="#1336a6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="79.0" layoutY="190.0" prefHeight="20.0" prefWidth="197.0" text="LabEnter Your Bkash Number :" textFill="#11c07d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="277.0" layoutY="188.0" prefHeight="25.0" prefWidth="88.0" />
+      <Label layoutX="155.0" layoutY="247.0" text="Extra amount's been sent via Bkash Number!" textFill="#741919">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="497.0" layoutY="14.0" mnemonicParsing="false" text="Dashboard" textFill="#2506d2" />
+   </children>
+</AnchorPane>

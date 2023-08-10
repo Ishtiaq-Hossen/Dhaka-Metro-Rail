@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" onMouseClicked="#returnHomePageButtonOnClick" prefHeight="494.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CustomerQueriesController">
+   <children>
+      <Label layoutX="128.0" layoutY="61.0" text="Name:" />
+      <Label layoutX="130.0" layoutY="154.0" text="Email:" />
+      <TextField fx:id="nameTextField" layoutX="121.0" layoutY="88.0" promptText="Enter Name" />
+      <TextField fx:id="emailextField" layoutX="128.0" layoutY="190.0" promptText="Enter Email" />
+      <TextArea layoutX="143.0" layoutY="279.0" prefHeight="91.0" prefWidth="489.0" promptText="Write your all Queries" />
+      <Label layoutX="143.0" layoutY="247.0" text="Comment:" />
+      <Button layoutX="154.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#submitButtonOnClick" prefHeight="31.0" prefWidth="136.0" text="Submit" />
+      <ComboBox fx:id="querirsTypeomboBox" layoutX="512.0" layoutY="88.0" prefWidth="150.0" promptText="Type Select" />
+      <Label layoutX="512.0" layoutY="51.0" text="Select types of querirs" />
+      <Button layoutX="447.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#returnHomePageButtonOnClick" text="Return to home page" />
+   </children>
+</AnchorPane>

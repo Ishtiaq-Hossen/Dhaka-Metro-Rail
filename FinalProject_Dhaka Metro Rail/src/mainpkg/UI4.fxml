@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: blue; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.UI4Controller">
+   <children>
+      <Label fx:id="route1" layoutX="52.0" layoutY="39.0" prefHeight="47.0" prefWidth="136.0" style="-fx-border-color: blue;" text="Uttara-Mirpur" />
+      <Label fx:id="route2" layoutX="53.0" layoutY="97.0" prefHeight="47.0" prefWidth="136.0" style="-fx-border-color: blue;" text="Shahbag-Uttara" />
+      <Label fx:id="route3" layoutX="53.0" layoutY="153.0" prefHeight="47.0" prefWidth="136.0" style="-fx-border-color: blue;" text="Shahbag-Kazipara" />
+      <Label fx:id="route1active" layoutX="222.0" layoutY="39.0" prefHeight="47.0" prefWidth="127.0" style="-fx-background-color: #b4b7d8;" text="Active" />
+      <Button layoutX="373.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#enableRoute1" prefHeight="47.0" prefWidth="127.0" text="Enable/Disable" />
+      <Label fx:id="route2active" layoutX="222.0" layoutY="97.0" prefHeight="47.0" prefWidth="127.0" style="-fx-background-color: #b4b7d8;" text="Active" />
+      <Label fx:id="route3active" layoutX="222.0" layoutY="153.0" prefHeight="47.0" prefWidth="127.0" style="-fx-background-color: #b4b7d8;" text="Active" />
+      <Button layoutX="373.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#enableRoute2" prefHeight="47.0" prefWidth="127.0" text="Enable/Disable" />
+      <Button layoutX="373.0" layoutY="153.0" mnemonicParsing="false" onMouseClicked="#enableRoute3" prefHeight="47.0" prefWidth="127.0" text="Enable/Disable" />
+      <Label fx:id="showNotice" layoutX="52.0" layoutY="232.0" prefHeight="59.0" prefWidth="448.0" style="-fx-border-color: #6e74c4; -fx-border-width: 3;" text="All notices" />
+      <Button layoutX="53.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#saveOperation" prefHeight="47.0" prefWidth="448.0" style="-fx-background-color: #44ca58;" text="Save" textFill="WHITE" />
+   </children>
+</AnchorPane>

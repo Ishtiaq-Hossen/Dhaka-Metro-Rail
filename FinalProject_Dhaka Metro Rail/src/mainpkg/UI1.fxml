@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: blue; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.UI1Controller">
+   <children>
+      <Label layoutX="109.0" layoutY="48.0" prefHeight="72.0" prefWidth="366.0" style="-fx-border-color: blue;" text="20 seats remaining" />
+      <TextField layoutX="108.0" layoutY="170.0" onMouseClicked="#saveRemainingSeatsOnClick" prefHeight="62.0" prefWidth="366.0" promptText="set percentage for the reamining seats" />
+      <Button layoutX="110.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#saveRemainingSeatsOnClick" prefHeight="62.0" prefWidth="366.0" text="Save" />
+   </children>
+</AnchorPane>
